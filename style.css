@@ -90,16 +90,26 @@ h1 {
   text-decoration: underline;
 }
 
+/* Стили для всех иконок внутри контактов */
+.contacts i {
+  font-size: 1.5rem;
+  margin-right: 6px;
+  vertical-align: middle;
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+/* Чтобы иконка меняла цвет вместе с текстом при наведении */
+.contacts a:hover i,
+.contacts address:hover i {
+  color: var(--accent-hover);
+}
+
 .address {
   font-size: 0.95rem;
   color: var(--text-primary);
   font-weight: 400;
   font-style: normal;
-}
-
-.address::before {
-  content: "📍 ";
-  margin-right: 4px;
 }
 
 section {
