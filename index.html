@@ -4,6 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph / Facebook / VK -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shapovalov-dmitriy.github.io/project-01-resume/">
+  <meta property="og:title" content="Дмитрий Шаповалов — HTML-верстальщик">
+  <meta property="og:description" content="Портфолио веб-разработчика: вёрстка, адаптив, доступность">
+  <meta property="og:image" content="https://shapovalov-dmitriy.github.io/project-01-resume/img/hero-photo.webp">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://shapovalov-dmitriy.github.io/project-01-resume/">
+  <meta property="twitter:title" content="Дмитрий Шаповалов — HTML-верстальщик">
+  <meta property="twitter:description" content="Портфолио веб-разработчика: вёрстка, адаптив, доступность">
+  <meta property="twitter:image" content="https://shapovalov-dmitriy.github.io/project-01-resume/img/hero-photo.webp">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -35,34 +49,62 @@
 
   <main>
     <section class="about">
-      <h2>О себе</h2>
-      <p>Осваиваю фронтенд-разработку. Умею верстать семантически, работаю с Git, использую адаптивную вёрстку. Ищу
-        первые
-        проекты для портфолио.</p>
+      <h2 class="title">О себе</h2>
+      <div class="about__content">
+
+        <div class="about__photo">
+          <img class="about__photo-img" src="./img/hero-photo.webp" alt="Дмитрий Шаповалов">
+        </div>
+
+        <div class="about__text">
+          <p>Осваиваю фронтенд-разработку. Умею верстать семантически, работаю с Git, использую адаптивную вёрстку. Ищу
+            первые
+            проекты для портфолио.</p>
+        </div>
+      </div>
     </section>
 
     <section class="skills">
-      <h2>Навыки</h2>
-      <ul>
-        <li>HTML5, CSS3 (семантика, валидация)</li>
-        <li>Git, GitHub, базовый терминал</li>
-        <li>Работа с макетами в Figma</li>
-        <li>Понимание доступности (a11y) и mobile-first</li>
+      <h2 class="title">Навыки</h2>
+      <ul class="skills__list">
+        <li class="skills__item">HTML5, CSS3 (семантика, валидация)</li>
+        <li class="skills__item">Git, GitHub, базовый терминал</li>
+        <li class="skills__item">Работа с макетами в Figma</li>
+        <li class="skills__item">Понимание доступности (a11y) и mobile-first</li>
       </ul>
     </section>
 
     <section class="project">
-      <h2>Проекты</h2>
-      <article class="project-card">
-        <h3>Сайт-резюме</h3>
-        <p>Вёрстка с нуля, адаптив, деплой на GitHub Pages</p>
-        <a href="https://github.com/Shapovalov-Dmitriy/project-01-resume" target="_blank">Посмотреть код →</a>
-      </article>
+      <h2 class="title">Проекты</h2>
+      <div class="project__grid">
+        <article class="project__card">
+          <h3 class="project__card-title">Сайт-резюме</h3>
+          <p>Вёрстка с нуля, адаптив, деплой на GitHub Pages</p>
+          <a class="project__card-link" href="https://github.com/Shapovalov-Dmitriy/project-01-resume"
+            target="_blank">Посмотреть код →</a>
+        </article>
+        <article class="project__card">
+          <h3 class="project__card-title">Лендинг кофейни</h3>
+          <p>Многостраничный сайт, CSS Grid, анимации</p>
+          <a class="project__card-link" href="#" target="_blank">Посмотреть код →</a>
+        </article>
+        <article class="project__card">
+          <h3 class="project__card-title">Интернет-магазин</h3>
+          <p>Каталог товаров, фильтрация, корзина (учебный)</p>
+          <a class="project__card-link" href="#" target="_blank">Посмотреть код →</a>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Дмитрий Шаповалов. Код написан вручную.</p>
+    <p class="validator-css">
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Правильный CSS!">
+      </a>
+    </p>
+
   </footer>
 </body>
 
